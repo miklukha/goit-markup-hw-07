@@ -1,21 +1,24 @@
 .btn {
+	min-width: 200px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.87;
 	text-align: center;
 	letter-spacing: 0.06em;
+
 	color: var(--second-text-color);
 	background-color: var(--accent-color);
 	border: transparent;
 	border-radius: 4px;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	padding-top: 10px;
-	padding-bottom: 10px;
-	min-width: 200px;
+	box-shadow: 0px 4px 4px var(--shadow-btn-color);
+
 	transition: background-color var(--transit-dur) var(--transit-func);
 
 	&:hover,
 	&:focus {
-		background-color: var(--button-hover-color);
+		background-color: var(--btn-hover-color);
 	}
 }

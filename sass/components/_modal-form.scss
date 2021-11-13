@@ -15,23 +15,24 @@
 	color: var(--third-text-color);
 }
 .modal__field {
+	margin-bottom: 10px;
+
 	font-size: 12px;
 	line-height: calc(14 / 12);
 	letter-spacing: 0.01em;
 	color: var(--first-text-color);
-	margin-bottom: 10px;
 }
 
 .modal__wrapper {
 	position: relative;
 	display: block;
-	color: var(--third-text-color);
 	margin-top: 4px;
+	color: var(--third-text-color);
 }
 
 .modal__input--common {
 	width: 100%;
-	border: 1px solid rgba(33, 33, 33, 0.2);
+	border: 1px solid var(--input-border-color);
 	border-radius: 4px;
 	transition: border-color var(--transit-dur) var(--transit-func);
 
@@ -73,7 +74,7 @@
 		line-height: calc(16 / 14);
 		letter-spacing: 0.01em;
 
-		color: rgba(117, 117, 117, 0.5);
+		color: var(--placeholder-color);
 	}
 }
 
@@ -109,12 +110,14 @@
 
 		.modal__checkbox:checked + & {
 			border-color: transparent;
-			background-image: url(../img/icon-check.svg);
-			background-color: var(--accent-color);
-			background-size: contain;
-			background-repeat: no-repeat;
-			background-origin: border-box;
-			background-position: center;
+			background: {
+				image: url(../img/icon-check.svg);
+				color: var(--accent-color);
+				size: contain;
+				repeat: no-repeat;
+				origin: border-box;
+				position: center;
+			}
 		}
 
 		.modal__checkbox:focus + & {

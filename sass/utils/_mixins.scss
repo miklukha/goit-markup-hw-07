@@ -1,0 +1,25 @@
+@mixin address-text($fs: 14px, $lh: 24px, $ls: 0.03em) {
+	font-size: $fs;
+	line-height: $lh/$fs;
+	letter-spacing: $ls;
+}
+
+@mixin header-link(
+	$pt: 32px,
+	$pb: 32px,
+	$fw: 500,
+	$fs: 14px,
+	$lh: 1.14,
+	$ls: 0.02em,
+	$trans: color var(--transit-dur) var(--transit-func)
+) {
+	padding-top: $pt;
+	padding-bottom: $pb;
+
+	font-weight: $fw;
+	font-size: $fs;
+	line-height: $lh;
+	letter-spacing: $ls;
+
+	transition: $trans;
+}

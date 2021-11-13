@@ -1,12 +1,12 @@
 .header {
-	border-bottom: 1px solid var(--line-color);
 	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 1;
 	height: 80px;
-	background-color: #fff;
 	width: 100%;
+	border-bottom: 1px solid var(--line-color);
+	background-color: #fff;
 }
 
 .header__container {
@@ -39,18 +39,8 @@
 	margin-right: 30px;
 }
 
-.nav__link,
-.contacts__link {
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 1.14;
-	letter-spacing: 0.02em;
-	padding-top: 32px;
-	padding-bottom: 32px;
-	transition: color var(--transit-dur) var(--transit-func);
-}
-
 .nav__link {
+	@include header-link();
 	color: var(--third-text-color);
 
 	&:hover,
@@ -83,6 +73,7 @@
 }
 
 .contacts__link {
+	@include header-link();
 	display: flex;
 	align-items: center;
 	color: var(--first-text-color);

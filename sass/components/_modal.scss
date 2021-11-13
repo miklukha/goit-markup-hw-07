@@ -12,7 +12,7 @@
 
 	transition: transform var(--transit-dur) var(--transit-func);
 
-	.backdrop.is-hidden .modal {
+	.is-hidden & {
 		transform: translate(-50%, -50%) scale(1.1);
 	}
 }
