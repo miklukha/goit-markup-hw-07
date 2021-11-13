@@ -746,6 +746,7 @@ a {
 
 .footer__icon {
   fill: currentColor;
+  margin-left: 10px;
 }
 
 .works {
