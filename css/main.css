@@ -746,6 +746,10 @@ a {
 
 .footer__icon {
   fill: currentColor;
+}
+
+.footer__form-icon {
+  fill: currentColor;
   margin-left: 10px;
 }
 
