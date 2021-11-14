@@ -765,7 +765,7 @@ a {
   justify-content: center;
 }
 
-.filter-list:not(:last-child) {
+.filter-list__item:not(:last-child) {
   margin-right: 8px;
 }
 
